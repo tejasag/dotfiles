@@ -109,3 +109,15 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 alias ls="natls -ls"
 alias mkcdir="mkdir $1 && cd $1"
 export PATH=$PATH:/snap/emacs/966/usr/bin:$PATH
+alias ga="git add ."
+alias gc="git commit"
+alias gp="git push origin"
+export FLYCTL_INSTALL="/home/tejasagarwal/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export JAVA_HOME="/home/tejasagarwal/.local/share/JetBrains/Toolbox/apps/AndroidStudio/ch-0/201.7042882/jre"
+export PATH=$PATH:$JAVA_HOME/bin:$PATH
+export PATH=$PATH:$JAVA_HOME:$PATH
+cppc () 
+{
+	g++ -o $1 $1.cc && ./$1
+}
