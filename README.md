@@ -1,9 +1,12 @@
-
 My dotfiles.
 
 Includes configuration for:
-- zshrc
+- Zsh 
 - Doom Emacs
+- Fish
+- Herbstluft Window Manager 
+- NeoVim
+- Kitty Terminal
+- EWW theme 
 
 
-More to come soon because I recently started using linux! (:
