@@ -1,4 +1,5 @@
-# eval (brew shellenv) 
+# eval (brew shellenv)
+set -x TERM "xterm-kitty"
 set -x DENO_INSTALL "/home/tejasagarwal/.deno"
 set -x FLYCTL_INSTALL "/home/tejasagarwal/.fly"
 set -x JAVA_HOME "/usr/lib/jvm/jdk-15.0.2"
@@ -25,6 +26,7 @@ function nvm
 end
 
 nvm use default --silent
+direnv hook fish | source
 
 starship init fish | source
 
