@@ -1,12 +1,10 @@
-My dotfiles.
+# [Tejas Agarwal](https://github.com/tejasag)'s dotfiles
 
 Includes configuration for:
-- Zsh 
 - Doom Emacs
-- Fish
-- Herbstluft Window Manager 
+- Fish Shell
+- Herbstluft Window Manager
 - NeoVim
 - Kitty Terminal
+- Polybar
 - EWW theme 
-
-

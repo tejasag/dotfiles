@@ -4,7 +4,7 @@ set -x DENO_INSTALL "/home/tejasagarwal/.deno"
 set -x FLYCTL_INSTALL "/home/tejasagarwal/.fly"
 set -x JAVA_HOME "/usr/lib/jvm/jdk-15.0.2"
 # source $HOME/.cargo/env
-set -x NVM_DIR "$HOME/.nvm"
+set -x NVM_DIR "/home/tejasagarwal/.nvm"
 set -x LDFLAGS "-L/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib"
 set -x CPPFLAGS "-I/home/linuxbrew/.linuxbrew/opt/isl@0.18/include"
 set -x PKG_CONFIG_PATH "/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib/pkgconfig"
@@ -12,6 +12,7 @@ set -x PKG_CONFIG_PATH "/home/linuxbrew/.linuxbrew/opt/isl@0.18/lib/pkgconfig"
 
 alias please="sudo"
 alias pls="sudo"
+alias iamroot="sudo"
 alias prismago='github.com/prisma/prisma-client-go'
 alias dev="cd ~/Desktop/development"
 alias nls="natls -ls"
@@ -22,11 +23,11 @@ alias gp="git push origin"
 alias icat="kitty +kitten icat"
 
 function nvm
-    bass source $NVM_DIR/nvm.sh --no-use ';' nvm $argv
+  bass source $NVM_DIR/nvm.sh --no-use ';' nvm $argv
 end
 
 nvm use default --silent
-direnv hook fish | source
+# direnv hook fish | source
 
 starship init fish | source
 

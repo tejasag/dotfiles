@@ -29,9 +29,9 @@ hc keybind $Mod-Shift-q close
 hc keybind $Mod-Shift-r reload
 
 # terminals
-hc keybind $Mod-Return spawn "${TERMINAL:-xterm}"
-hc keybind $Mod-Shift-Return spawn "${TERMINAL:-xterm}" --class floating_term,floating_term
-hc keybind $Mod-Ctrl-Return spawn "${TERMINAL:-xterm}" --class teeny_term,teeny_term
+hc keybind $Mod-Return spawn "${TERMINAL:-kitty}"
+hc keybind $Mod-Shift-Return spawn "${TERMINAL:-kitty}" --class floating_term,floating_term
+hc keybind $Mod-Ctrl-Return spawn "${TERMINAL:-kitty}" --class teeny_term,teeny_term
 
 # focusing clients
 hc keybind $Mod-h     focus left
