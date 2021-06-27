@@ -21,6 +21,7 @@ alias ga="git add ."
 alias gc="git commit"
 alias gp="git push origin"
 alias icat="kitty +kitten icat"
+alias lx="natls -lgm"
 
 function nvm
   bass source $NVM_DIR/nvm.sh --no-use ';' nvm $argv

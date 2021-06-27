@@ -1,14 +1,9 @@
 #!/bin/bash
 
-#  ____  _   _ 
-# |  _ \| \ | | Pradyun Narkadamilli
-# | |_) |  \| | https://pradyungn.tech
-# |  __/| |\  | MIT License
-# |_|   |_| \_| Copyright 2021 Pradyun Narkadamilli
-
+nitrogen --restore &
+dunst &
 
 ~/.config/herbstluftwm/configs/theme
 ~/.config/herbstluftwm/configs/keybinds
 ~/.config/herbstluftwm/configs/setup
 ~/.config/polybar/launch.sh --forest
-nitrogen --set-scale --random ~/polybar-themes/wallpapers
